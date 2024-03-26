@@ -1,0 +1,24 @@
+
+.product-card img {
+  width: 242px;
+}
+
+.animated__carousel-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.carousel__button-prev,
+.carousel__button-next {
+  padding: 10px 20px;
+}
+
+.carousel__button-prev svg,
+.carousel__button-next svg {
+  width: 12px;
+}
+
+.carousel__button-prev svg {
+  transform: rotateY(180deg);
+}

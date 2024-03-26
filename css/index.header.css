@@ -1,0 +1,183 @@
+.header {
+  min-height: 80px;
+  padding: 20px 0;
+  background-color: var(--backgraund-secondary-color);
+}
+
+.header__info {
+  display: flex;
+}
+
+.header__info {
+  background-color: inherit;
+}
+
+.header__logo-img {
+  width: 106px;
+}
+
+.header__menu-btn {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 19px 8px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+@media (min-width: 991px) {
+  .header__menu-btn {
+    display: none;
+  }
+}
+
+.header__menu-icon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  position: relative;
+  background: black;
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+}
+
+.header__menu-icon::before,
+.header__menu-icon::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: black;
+  transition: all 0.2s ease-out;
+}
+
+.header__menu-icon:before {
+  top: 7px;
+}
+
+.header__menu-icon:after {
+  top: -7px;
+}
+
+.header__menu {
+  top: -100vh;
+  transition: all .5s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  gap: 30px;
+}
+
+@media (min-width: 991px) {
+  .header__menu  {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    top: 0;
+    height: auto;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 80px;
+  }
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (min-width: 991px) {
+  .header__nav {
+    flex-direction: row;
+  }
+}
+
+.header__nav a {
+  font-family: var(--main-font);
+  font-size: 16px;
+  color: var(--text-main-color);
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+
+@media (min-width: 991px) {
+  .header__nav a {
+    font-size: 11px;
+    letter-spacing: 1.1px;
+  }
+}
+
+.header__nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--link-hover-color);
+  transition: width .3s;
+}
+
+.header__nav a:hover {
+  color: var(--link-hover-color);
+}
+
+.header__nav a:hover::after {
+  width: 100%;
+}
+
+.header__media {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+
+}
+
+.header__media a svg {
+  width: 26px;
+  fill: var(--text-third-color);
+  transition: all .4s ease-in-out;
+}
+
+.header__media a svg:hover {
+  width: 30px;
+  opacity: .7;
+}
+
+.header.nav-visible .header__menu {
+  top: 80px;
+}
+
+.header.nav-visible .header__menu {
+  background: var(--backgraund-secondary-color);
+}
+
+.header.nav-visible .header__menu-icon {
+  background: transparent;
+}
+
+.header.nav-visible .header__menu-icon::before {
+  transform: rotate(-45deg);
+}
+
+.header.nav-visible .header__menu-icon::after {
+  transform: rotate(45deg);
+}
+
+.header.nav-visible .header__menu-icon::before,
+.header.nav-visible .header__menu-icon::after {
+  top: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
