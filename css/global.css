@@ -19,6 +19,12 @@ img {
   margin: auto;
 }
 
+@media (min-width: 991px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
 :root {
   --main-font: "Open Sans", sans-serif;
   --second-font: "Archivo", sans-serif;
@@ -30,10 +36,17 @@ img {
   --text-main-color: rgb(141, 141, 141);
   --text-secondary-color: rgb(112, 112, 112);
   --text-third-color: rgb(140, 158, 138);
+  --button-text-color: rgb(255, 255, 255);
+  --button-bg-color: rgb(145, 121, 98);
+  --button-bg-color-secondary: rgb(140, 158, 138);
 }
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .caption-number {
@@ -45,9 +58,21 @@ a {
   color: var(--text-main-color);
 }
 
-.secondary-title {
+.section-title {
   font-size: 34px;
   font-weight: 700;
   line-height: 38.76px;
   font-family: var(--second-font);
+  color: var(--title-main-color);
+
+}
+
+.btn {
+  padding: 14px 20px;
+  color: var(--button-text-color);
+  font-family: var(--main-font);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  border: none;
 }
