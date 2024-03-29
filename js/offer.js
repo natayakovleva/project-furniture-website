@@ -2,7 +2,6 @@ const slideContainer = document.querySelector('.carousel-container');
 const nextBtn = document.querySelector('.carousel__button-next');
 const prevBtn = document.querySelector('.carousel__button-prev');
 const slideItems = Array.from(slideContainer.children);
-console.log(slideItems);
 
 let currentSlideIdx = 0;
 

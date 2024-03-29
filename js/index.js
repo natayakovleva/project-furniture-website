@@ -2,6 +2,7 @@ function init() {
   import("./header.js");
   import("./hero.js");
   import("./offer.js");
+  import("./have-questions.js");
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
