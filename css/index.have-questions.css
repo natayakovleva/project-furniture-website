@@ -1,0 +1,41 @@
+.have-questions {
+  background-color: var(--backgraund-section-color);
+  padding-top: 90px;
+}
+
+.have-question__inform-description {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.have-question__title {
+  margin-top: 20px;
+}
+
+.have-question__title+p {
+  margin-top: 25px;
+  color: var(--text-secondary-color);
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.have-question__inform-description-text {
+  color: var(--text-main-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+.have-question__inform-description-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--text-third-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
